@@ -282,9 +282,9 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="pr-16">
-          {/*first */}
-          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden mr-[-100px] pr-32 mb-10">
+        <div className="flex flex-col items-center mt-10 space-y-10">
+          {/* First Review */}
+          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden">
             {/* Image Section */}
             <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
               <img 
@@ -293,7 +293,6 @@ const Home = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
             {/* Content Section */}
             <div className="p-8">
               <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
@@ -309,18 +308,16 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           {/* Second Review */}
-          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden mr-[-100px] pr-32 mb-10">
-            {/* Image Section */}
+          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden">
             <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
               <img 
                 src="/review-3.avif"
-                alt="Review 1"
+                alt="Review 2"
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Content Section */}
             <div className="p-8">
               <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
                 "Very professional and attentive to detail. They made our wedding day truly special and stress-free. Highly recommend!"
@@ -335,18 +332,16 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           {/* Third Review */}
-          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden mr-[-100px] pr-32">
-            {/* Image Section */}
+          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden">
             <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
               <img 
                 src="/review-4.avif"
-                alt="Review 1"
+                alt="Review 3"
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Content Section */}
             <div className="p-8">
               <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
                 "Very professional and attentive to detail. They made our wedding day truly special and stress-free. Highly recommend!"
