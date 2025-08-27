@@ -97,135 +97,157 @@ const Home = () => {
 
           {/* Our Expertise Section */}
           <section className="w-full bg-[#2F4231] py-10 sm:py-16 lg:py-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-              <h3 className="text-lg sm:text-xl font-serif font-light text-[#E3DFD3]/80 text-left mb-3 sm:mb-4">Our Expertise</h3>
-              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-sans font-medium leading-tight text-[#E3DFD3]">Moments Fused with</h1>
-              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-sans font-medium leading-tight text-[#E3DFD3] mb-8 sm:mb-12 lg:mb-16">Elegance & Charm</h1>
-            </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+            <h3 className="text-lg sm:text-xl font-serif font-light text-[#E3DFD3]/80 text-left mb-3 sm:mb-4">
+              Our Expertise
+            </h3>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-sans font-medium leading-tight text-[#E3DFD3]">
+              Moments Fused with
+            </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-sans font-medium leading-tight text-[#E3DFD3] mb-8 sm:mb-12 lg:mb-16">
+              Elegance & Charm
+            </h1>
+          </div>
+
+          {/* Full-width container */}
+          <div className="w-full lg:relative">
             
-            {/* Full-width container - sticky only on lg+ screens */}
-            <div className="w-full lg:relative">
-              {/* Planning Section - sticky only on large screens */}
-              <div className="lg:sticky lg:top-0 lg:z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
-                  <div className="lg:col-span-5 relative">
-                    <img 
-                      src="/planning.avif" 
-                      alt="Wedding Planning" 
-                      className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
-                    />
-                  </div>
-                  
-                  <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start">
-                    <div className="max-w-md mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
-                      <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">01</p>
-                      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
-                        Planning
-                      </h2>
-                      <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
-                        This is the space to describe the service and explain how customers or clients can 
-                        benefit from it. It's an opportunity to add a short description that includes relevant 
-                        details, like pricing, duration, location and how to book the service.
-                      </p>
-                    </div>
+            {/* Planning Section */}
+            <div className="lg:sticky lg:top-0 lg:z-10">
+              <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
+                
+                {/* Image */}
+                <div className="lg:col-span-5 relative">
+                  <img 
+                    src="/planning.avif" 
+                    alt="Wedding Planning" 
+                    className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
+                  />
+                </div>
+                
+                {/* Text */}
+                <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start text-left">
+                  <div className="max-w-md px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
+                    <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">01</p>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
+                      Planning
+                    </h2>
+                    <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
+                      This is the space to describe the service and explain how customers or clients can 
+                      benefit from it. It's an opportunity to add a short description that includes relevant 
+                      details, like pricing, duration, location and how to book the service.
+                    </p>
                   </div>
                 </div>
-              </div>
 
-              {/* Design Section - sticky only on large screens */}
-              <div className="lg:sticky lg:top-0 lg:z-20">
-                <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
-                  <div className="lg:col-span-5 relative flex justify-end">
-                    <img 
-                      src="/design.avif" 
-                      alt="Wedding Design" 
-                      className="w-full sm:w-[600px] md:w-[750px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
-                    />
-                  </div>
-                  
-                  <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start">
-                    <div className="max-w-md mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
-                      <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">02</p>
-                      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
-                        Design
-                      </h2>
-                      <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
-                        This is the space to describe the service and explain how customers or clients can 
-                        benefit from it. It's an opportunity to add a short description that includes relevant 
-                        details, like pricing, duration, location and how to book the service.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Logistics Section - sticky only on large screens */}
-              <div className="lg:sticky lg:top-0 lg:z-30">
-                <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
-                  <div className="lg:col-span-5 relative flex justify-end">
-                    <img 
-                      src="/logistic.avif" 
-                      alt="Wedding Logistics" 
-                      className="w-full sm:w-[700px] md:w-[850px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
-                    />
-                  </div>
-                  
-                  <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start">
-                    <div className="max-w-md mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
-                      <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">03</p>
-                      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
-                        Logistics
-                      </h2>
-                      <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
-                        This is the space to describe the service and explain how customers or clients can 
-                        benefit from it. It's an opportunity to add a short description that includes relevant 
-                        details, like pricing, duration, location and how to book the service.
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </section>
+
+            {/* Design Section */}
+            <div className="lg:sticky lg:top-0 lg:z-20">
+              <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
+                
+                {/* Image */}
+                <div className="lg:col-span-5 relative flex justify-end">
+                  <img 
+                    src="/design.avif" 
+                    alt="Wedding Design" 
+                    className="w-full lg:w-[650px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
+                  />
+                </div>
+                
+                {/* Text */}
+                <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start text-left">
+                  <div className="max-w-md px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
+                    <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">02</p>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
+                      Design
+                    </h2>
+                    <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
+                      This is the space to describe the service and explain how customers or clients can 
+                      benefit from it. It's an opportunity to add a short description that includes relevant 
+                      details, like pricing, duration, location and how to book the service.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Logistics Section */}
+            <div className="lg:sticky lg:top-0 lg:z-30">
+              <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
+                
+                {/* Image */}
+                <div className="lg:col-span-5 relative flex justify-end">
+                  <img 
+                    src="/logistic.avif" 
+                    alt="Wedding Logistics" 
+                    className="w-full lg:w-[800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
+                  />
+                </div>
+                
+                {/* Text */}
+                <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start text-left">
+                  <div className="max-w-md px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
+                    <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">03</p>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
+                      Logistics
+                    </h2>
+                    <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
+                      This is the space to describe the service and explain how customers or clients can 
+                      benefit from it. It's an opportunity to add a short description that includes relevant 
+                      details, like pricing, duration, location and how to book the service.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         </div>
       </div>
       
       {/*portfolio*/}
-      <div className='w-full bg-[#0c2724] relative py-16 sm:py-20 lg:py-36'>
+      <div className="w-full bg-[#0c2724] relative py-16 sm:py-20 lg:py-36 overflow-hidden">
         {/* Left decorative image - behind text */}
-        <div className="absolute left-22 top-1/4 transform -translate-y-1/2 z-10">
+        <div className="absolute left-2 sm:left-6 md:left-10 top-1/4 transform -translate-y-1/2 z-10 opacity-30 sm:opacity-40 md:opacity-50 lg:opacity-60">
           <img 
             src="/rose.avif" 
-            alt="" 
-            className="w-32 sm:w-48 md:w-64 lg:w-72 h-[350px] object-cover opacity-80"
+            alt="Rose Decoration" 
+            className="w-32 sm:w-48 md:w-64 lg:w-72 h-auto object-cover"
           />
         </div>
         
         {/* Right decorative image - behind text */}
-        <div className="absolute right-12 top-1/2 transform -translate-y-1 z-10">
+        <div className="absolute right-2 sm:right-6 md:right-10 top-1/2 transform -translate-y-1/2 z-10 opacity-30 sm:opacity-40 md:opacity-50 lg:opacity-60">
           <img 
             src="/lantern.avif" 
-            alt="" 
-            className="w-32 sm:w-48 md:w-64 lg:w-80 h-[400px] object-cover opacity-80"
+            alt="Lantern Decoration" 
+            className="w-32 sm:w-48 md:w-64 lg:w-80 h-auto object-cover"
           />
         </div>
 
+        {/* Text Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center relative z-20">
           <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-light text-[#E3DFD3]/90 mb-6 sm:mb-8 md:mb-12">
             Featured Weddings
           </h3>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-8 sm:mb-12 lg:mb-2">
-            Get inspired by our 
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-4 sm:mb-6">
+            Get inspired by our
           </h1>
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-8 sm:mb-12 lg:mb-2">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-4 sm:mb-6">
             designs and see how we
           </p>
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-12 sm:mb-16 lg:mb-10">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-10 sm:mb-12">
             make dreams come true
           </p>
 
           {/* View Our Portfolio Button */}
-          <div className='mb-22'>
+          <div>
             <a 
               href="/portfolio"
               className="text-lg sm:text-xl md:text-2xl text-[#E3DFD3] hover:text-[#E3DFD3]/80 underline underline-offset-4 decoration-2 hover:decoration-1 transition-all duration-300"
@@ -235,6 +257,113 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+
+      {/*reviews*/}
+      <div className="w-full bg-[#e2dfd2] relative">
+        <div className="flex items-center justify-between ">
+          <div className='px-4 sm:px-6 md:px-8'>
+            <h4 className="text-xs sm:text-lg md:text-2xl lg:text-2xl xl:text-2xl font-serif text-[#2f4330]/90 leading-tight mb-2">
+              What Our Clients Say
+            </h4>
+            <p className="text-base sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#2f4330] leading-tight mb-4 sm:mb-6">
+              Letters From
+              <br />
+              Our Happy Clients
+            </p>
+          </div>
+
+          <div className="flex-shrink-0">
+            <img 
+              src="/review-1.avif" 
+              alt="Client Review" 
+              className="object-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]"
+            />
+          </div>
+        </div>
+        <div className="pr-16">
+          {/*first */}
+          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden mr-[-100px] pr-32 mb-10">
+            {/* Image Section */}
+            <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
+              <img 
+                src="/review-2.avif"
+                alt="Review 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Content Section */}
+            <div className="p-8">
+              <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
+                "Very professional and attentive to detail. They made our wedding day truly special and stress-free. Highly recommend!"
+              </p>
+              <div className="border-t border-[#e2dfd2] pt-4">
+                <h5 className="font-serif font-semibold text-[#2f4330] text-lg sm:text-xl">
+                  7 Creation Client
+                </h5>
+                <p className="text-sm sm:text-base text-[#2f4330]/70 mt-2">
+                  Wedding Event
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* Second Review */}
+          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden mr-[-100px] pr-32 mb-10">
+            {/* Image Section */}
+            <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
+              <img 
+                src="/review-3.avif"
+                alt="Review 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Content Section */}
+            <div className="p-8">
+              <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
+                "Very professional and attentive to detail. They made our wedding day truly special and stress-free. Highly recommend!"
+              </p>
+              <div className="border-t border-[#e2dfd2] pt-4">
+                <h5 className="font-serif font-semibold text-[#2f4330] text-lg sm:text-xl">
+                  7 Creation Client
+                </h5>
+                <p className="text-sm sm:text-base text-[#2f4330]/70 mt-2">
+                  Wedding Event
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* Third Review */}
+          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden mr-[-100px] pr-32">
+            {/* Image Section */}
+            <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
+              <img 
+                src="/review-4.avif"
+                alt="Review 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Content Section */}
+            <div className="p-8">
+              <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
+                "Very professional and attentive to detail. They made our wedding day truly special and stress-free. Highly recommend!"
+              </p>
+              <div className="border-t border-[#e2dfd2] pt-4">
+                <h5 className="font-serif font-semibold text-[#2f4330] text-lg sm:text-xl">
+                  7 Creation Client
+                </h5>
+                <p className="text-sm sm:text-base text-[#2f4330]/70 mt-2">
+                  Wedding Event
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 
       <Footer />
