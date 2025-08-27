@@ -1,0 +1,245 @@
+import React from 'react'
+import Navbar from './navbar'
+import Footer from './footer'
+
+const Home = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero */}
+      <div className="w-full bg-[#2F4231]">
+        <Navbar />
+        <div className="max-w-7xl px-4 sm:px-6 md:px-6 mx-auto text-[#E3DFD3] py-8 sm:py-10 md:py-12">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mt-2 font-sans font-medium leading-tight">Bespoke Weddings</h1>
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mt-2 font-sans font-medium leading-tight">Planned to Perfection</h1>
+        </div>
+      </div>
+
+      {/* Combined section with overlapping video */}
+      <section className="w-full bg-[#2F4231] text-[#E3DFD3] relative">
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          <div className="w-full ">
+            <div className="max-w-6xl px-4 sm:px-6 md:px-8 ml-4 sm:ml-6 md:ml-8 lg:ml-28 mx-auto py-8 sm:py-10 md:py-12">
+              <div className="space-y-4 sm:space-y-6">
+                <h2 className="text-xl sm:text-2xl md:text-2xl text-[#E3DFD3]/80 font-serif leading-tight">
+                  Full-Service Event Planning & Design Company
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative h-[400px] xs:h-[450px] sm:h-[520px] md:h-[600px] lg:h-[800px] xl:h-[800px] 2xl:h-[800px] z-50 lg:col-span-2">
+            <video
+              src="/landing.mp4"
+              poster="/video-poster.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-4 relative -mt-32 sm:-mt-40 md:-mt-48 lg:-mt-64 xl:-mt-80 z-10">
+          <div className="hidden lg:block bg-[#E3DFD3] px-4 sm:px-6 md:px-8 py-16 sm:py-20 md:py-24 lg:py-32 pt-32 sm:pt-40 md:pt-48 lg:pt-64 xl:pt-80" />
+
+          <div className="bg-[#E3DFD3] text-[#2F4231] px-4 sm:px-6 md:px-8 py-16 sm:py-20 md:py-24 lg:py-32 pt-32 sm:pt-40 md:pt-48 lg:pt-64 xl:pt-80 lg:col-span-3 flex flex-col justify-center">
+            <div className="mx-auto text-left ">
+              <h4 className="text-lg sm:text-xl md:text-3xl font-medium mb-6 sm:mb-8 md:mb-12 text-[#2F4231]/80 mt-10">
+                We are 7 Creation
+              </h4>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif leading-tight text-[#2F4231]">
+                We Focus on Every
+              </h2>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif leading-tight text-[#2F4231] mt-2">
+                Little Detail
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image and overlapping content */}
+      <div className="relative">
+        <img src="/table.avif" alt="" className="w-full h-screen object-cover sticky top-0" />
+        
+        <div className="relative z-10  min-h-screen">
+          <div className="bg-white rounded-t-xl sm:rounded-t-2xl lg:rounded-t-3xl mx-auto max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl px-4 sm:px-6 md:px-8 lg:px-12 py-6 sm:py-8 md:py-10 lg:py-12 mb-16 sm:mb-18 md:mb-20 lg:mb-22 relative">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-[#2F4231]/90 mb-4 sm:mb-6 md:mb-7 lg:mb-8 leading-relaxed">
+              We are an award-winning event planning company based in sunny Jaipur.
+            </p>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-[#2F4231]/90 mb-6 sm:mb-7 md:mb-8 lg:mb-10 leading-relaxed">
+              From initial concept to the big day, we are here to bring your dream event to life, always keeping your wishes and vision in mind.
+            </p>
+            
+            {/* Learn More Button */}
+            <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+              <a 
+                href="/about"
+                className="hover:underline text-base sm:text-lg md:text-xl text-[#2F4231]/90"
+              >
+                Learn More
+              </a>
+            </div>
+            
+            {/* Small image positioned at bottom right */}
+            <div className='flex justify-end py-2 sm:py-3 md:py-4 lg:py-6'>
+              <img 
+                src="/girl.avif" 
+                alt="" 
+                className="w-32 sm:w-40 md:w-48 lg:w-60 h-40 sm:h-50 md:h-60 lg:h-70 object-cover rounded-md"
+              />
+            </div>
+          </div>
+
+
+          
+
+          {/* Our Expertise Section */}
+          <section className="w-full bg-[#2F4231] py-10 sm:py-16 lg:py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+              <h3 className="text-lg sm:text-xl font-serif font-light text-[#E3DFD3]/80 text-left mb-3 sm:mb-4">Our Expertise</h3>
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-sans font-medium leading-tight text-[#E3DFD3]">Moments Fused with</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-sans font-medium leading-tight text-[#E3DFD3] mb-8 sm:mb-12 lg:mb-16">Elegance & Charm</h1>
+            </div>
+            
+            {/* Full-width container - sticky only on lg+ screens */}
+            <div className="w-full lg:relative">
+              {/* Planning Section - sticky only on large screens */}
+              <div className="lg:sticky lg:top-0 lg:z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
+                  <div className="lg:col-span-5 relative">
+                    <img 
+                      src="/planning.avif" 
+                      alt="Wedding Planning" 
+                      className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
+                    />
+                  </div>
+                  
+                  <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start">
+                    <div className="max-w-md mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
+                      <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">01</p>
+                      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
+                        Planning
+                      </h2>
+                      <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
+                        This is the space to describe the service and explain how customers or clients can 
+                        benefit from it. It's an opportunity to add a short description that includes relevant 
+                        details, like pricing, duration, location and how to book the service.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Design Section - sticky only on large screens */}
+              <div className="lg:sticky lg:top-0 lg:z-20">
+                <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
+                  <div className="lg:col-span-5 relative flex justify-end">
+                    <img 
+                      src="/design.avif" 
+                      alt="Wedding Design" 
+                      className="w-full sm:w-[600px] md:w-[750px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
+                    />
+                  </div>
+                  
+                  <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start">
+                    <div className="max-w-md mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
+                      <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">02</p>
+                      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
+                        Design
+                      </h2>
+                      <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
+                        This is the space to describe the service and explain how customers or clients can 
+                        benefit from it. It's an opportunity to add a short description that includes relevant 
+                        details, like pricing, duration, location and how to book the service.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Logistics Section - sticky only on large screens */}
+              <div className="lg:sticky lg:top-0 lg:z-30">
+                <div className="grid grid-cols-1 lg:grid-cols-8 gap-0">
+                  <div className="lg:col-span-5 relative flex justify-end">
+                    <img 
+                      src="/logistic.avif" 
+                      alt="Wedding Logistics" 
+                      className="w-full sm:w-[700px] md:w-[850px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[750px] object-cover"
+                    />
+                  </div>
+                  
+                  <div className="lg:col-span-3 bg-[#2F4231] flex flex-col justify-start">
+                    <div className="max-w-md mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16">
+                      <p className="text-base sm:text-lg md:text-xl text-[#E3DFD3]/90 tracking-wider uppercase">03</p>
+                      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif text-[#E3DFD3] mb-4 sm:mb-6 md:mb-8 leading-tight">
+                        Logistics
+                      </h2>
+                      <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
+                        This is the space to describe the service and explain how customers or clients can 
+                        benefit from it. It's an opportunity to add a short description that includes relevant 
+                        details, like pricing, duration, location and how to book the service.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+      {/*portfolio*/}
+      <div className='w-full bg-[#0c2724] relative py-16 sm:py-20 lg:py-36'>
+        {/* Left decorative image - behind text */}
+        <div className="absolute left-22 top-1/4 transform -translate-y-1/2 z-10">
+          <img 
+            src="/rose.avif" 
+            alt="" 
+            className="w-32 sm:w-48 md:w-64 lg:w-72 h-[350px] object-cover opacity-80"
+          />
+        </div>
+        
+        {/* Right decorative image - behind text */}
+        <div className="absolute right-12 top-1/2 transform -translate-y-1 z-10">
+          <img 
+            src="/lantern.avif" 
+            alt="" 
+            className="w-32 sm:w-48 md:w-64 lg:w-80 h-[400px] object-cover opacity-80"
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center relative z-20">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-light text-[#E3DFD3]/90 mb-6 sm:mb-8 md:mb-12">
+            Featured Weddings
+          </h3>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-8 sm:mb-12 lg:mb-2">
+            Get inspired by our 
+          </h1>
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-8 sm:mb-12 lg:mb-2">
+            designs and see how we
+          </p>
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-12 sm:mb-16 lg:mb-10">
+            make dreams come true
+          </p>
+
+          {/* View Our Portfolio Button */}
+          <div className='mb-22'>
+            <a 
+              href="/portfolio"
+              className="text-lg sm:text-xl md:text-2xl text-[#E3DFD3] hover:text-[#E3DFD3]/80 underline underline-offset-4 decoration-2 hover:decoration-1 transition-all duration-300"
+            >
+              View Our Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <Footer />
+    </div>
+  )
+}
+
+export default Home
