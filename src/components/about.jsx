@@ -82,7 +82,7 @@ const About = () => {
                   ceo@mysite.com
                 </p>
                 <p className="text-sm text-[#E3DFD3] opacity-80 leading-relaxed">
-                  Visionary leader with 15+ years in event management and creative design.
+                  Visionary leader with 5+ years in event management and creative design.
                 </p>
               </div>
             </div>
@@ -91,11 +91,11 @@ const About = () => {
             <div className="flex justify-center">
               <div className="bg-[#E3DFD3] text-center px-6 py-8 w-80 shadow-2xl rounded-lg border-4 border-[#2F4231]">
                 <img
-                  src="/creative-director.jpg"
+                  src="/creative.png"
                   alt="Creative Director"
                   className="w-full h-44 object-cover mb-6 rounded"
                 />
-                <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Jane Smith</h3>
+                <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Rahul Sharma</h3>
                 <p className="text-lg text-[#2F4231] opacity-90 mb-2">Creative Director</p>
                 <p className="text-sm text-[#2F4231] opacity-70 mb-4">
                   jane@mysite.com
@@ -110,11 +110,11 @@ const About = () => {
             <div className="flex justify-center">
               <div className="bg-[#2F4231] text-center px-6 py-8 w-80 shadow-2xl rounded-lg">
                 <img
-                  src="/operations-manager.jpg"
+                  src="/operation.jpg"
                   alt="Operations Manager"
                   className="w-full h-44 object-cover mb-6 rounded"
                 />
-                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Mike Johnson</h3>
+                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Lakshya Pradhan</h3>
                 <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">Operations Manager</p>
                 <p className="text-sm text-[#E3DFD3] opacity-70 mb-4">
                   mike@mysite.com
