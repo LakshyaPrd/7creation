@@ -261,9 +261,9 @@ const Home = () => {
 
 
       {/*reviews*/}
-      <div className="w-full bg-[#e2dfd2] relative">
-        <div className="flex items-center justify-between ">
-          <div className='px-4 sm:px-6 md:px-8'>
+      <div className="w-full bg-[#e2dfd2] relative ">
+        <div className="flex items-center justify-between sticky top-0 mb-32">
+          <div className='px-4 sm:px-6 md:px-8 sticky top-8 z-10'>
             <h4 className="text-xs sm:text-lg md:text-2xl lg:text-2xl xl:text-2xl font-serif text-[#2f4330]/90 leading-tight mb-2">
               What Our Clients Say
             </h4>
@@ -274,7 +274,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 z-10 ">
             <img 
               src="/review-1.avif" 
               alt="Client Review" 
@@ -282,19 +282,19 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center mt-10 space-y-10">
+        <div className="flex flex-col items-center mt-10 space-y-16 sticky top-0">
           {/* First Review */}
-          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden">
+          <div className="w-[350px] sm:w-[550px] lg:w-[700px] bg-white overflow-hidden pr-28 pt-10 pl-8 sticky z-20 top-36 mb-16 pb-32">
             {/* Image Section */}
             <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
               <img 
                 src="/review-2.avif"
                 alt="Review 1"
-                className="w-full h-full object-cover"
+                className="w-lg h-full object-cover"
               />
             </div>
             {/* Content Section */}
-            <div className="p-8">
+            <div className="py-8 w-lg">
               <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
                 "Very professional and attentive to detail. They made our wedding day truly special and stress-free. Highly recommend!"
               </p>
@@ -310,23 +310,25 @@ const Home = () => {
           </div>
 
           {/* Second Review */}
-          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden">
+          <div className="w-[350px] sm:w-[550px] lg:w-[700px] bg-[#2f4330] overflow-hidden pr-28 pt-10 pl-8 sticky z-30 top-36 mb-16 py-32">
+            {/* Image Section */}
             <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
               <img 
                 src="/review-3.avif"
-                alt="Review 2"
-                className="w-full h-full object-cover"
+                alt="Review 1"
+                className="w-lg h-full object-cover"
               />
             </div>
-            <div className="p-8">
-              <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
+            {/* Content Section */}
+            <div className="py-8 w-lg">
+              <p className="text-base sm:text-lg text-[#e2dfd2] leading-relaxed mb-6 italic">
                 "Very professional and attentive to detail. They made our wedding day truly special and stress-free. Highly recommend!"
               </p>
               <div className="border-t border-[#e2dfd2] pt-4">
-                <h5 className="font-serif font-semibold text-[#2f4330] text-lg sm:text-xl">
+                <h5 className="font-serif font-semibold text-[#e2dfd2] text-lg sm:text-xl">
                   7 Creation Client
                 </h5>
-                <p className="text-sm sm:text-base text-[#2f4330]/70 mt-2">
+                <p className="text-sm sm:text-base text-[#e2dfd2]/70 mt-2">
                   Wedding Event
                 </p>
               </div>
@@ -334,15 +336,17 @@ const Home = () => {
           </div>
 
           {/* Third Review */}
-          <div className="w-[350px] sm:w-[550px] lg:w-[650px] bg-white overflow-hidden">
+          <div className="w-[350px] sm:w-[550px] lg:w-[700px] bg-white overflow-hidden pr-28 pt-10 pl-8 sticky z-40 top-36 mb-16 py-32">
+            {/* Image Section */}
             <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
               <img 
                 src="/review-4.avif"
-                alt="Review 3"
-                className="w-full h-full object-cover"
+                alt="Review 1"
+                className="w-lg h-full object-cover"
               />
             </div>
-            <div className="p-8">
+            {/* Content Section */}
+            <div className="py-8 w-lg">
               <p className="text-base sm:text-lg text-[#2f4330] leading-relaxed mb-6 italic">
                 "Very professional and attentive to detail. They made our wedding day truly special and stress-free. Highly recommend!"
               </p>
@@ -356,6 +360,34 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/*planning*/}
+      <div className="w-full flex h-screen relative pt-16 bg-[#2f4330]">
+        {/* Left Green Section - smaller width */}
+        <div className="bg-[#2f4330] w-4/12 relative z-10"></div>
+
+        {/* Right Image Section - wider width with reduced opacity */}
+        <div className="w-8/12 relative z-10">
+          <img
+            src="/last.avif"
+            alt="Wedding Decoration"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        
+
+        {/* Text Positioned Over Both */}
+        <div className="absolute top-1/3 left-12 transform -translate-y-1/2 z-20 max-w-7xl px-28 mt-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
+            Let's Start Planning the
+          </h1>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
+            Best Day of Your Life
+          </h1>
         </div>
       </div>
 

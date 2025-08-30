@@ -8,10 +8,10 @@ export default function Navbar() {
 
   return (
     <header
-      className="sticky top-0 z-50"
+      
       style={{ backgroundColor: '#2F4231', color: '#E3DFD3' }}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-22 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand */}
         <Link
           href="/"
@@ -32,7 +32,10 @@ export default function Navbar() {
           <Link href="/services" className="text-lg hover:opacity-90 text-[#E3DFD3]">
             Services
           </Link>
-          <Link href="/contact-us" className="text-lg transition text-[#E3DFD3]">
+          <Link href="/packages" className="text-lg hover:opacity-90 text-[#E3DFD3]">
+            Packages
+          </Link>
+          <Link href="/contact-us" className="text-lg hover:opacity-90 text-[#E3DFD3]">
             Contact Us
           </Link>
         </nav>
@@ -72,22 +75,20 @@ export default function Navbar() {
         }}
       >
         <nav className="px-4 pb-4 pt-2 flex flex-col gap-2">
-          <Link href="#about" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
+          <Link href="/about" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
             About
           </Link>
-          <Link href="#portfolio" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
+          <Link href="/portfolio" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
             Portfolio
           </Link>
-          <Link href="#services" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
+          <Link href="/services" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
             Services
           </Link>
-          <Link
-            href="#contact"
-            className="mt-1 py-2 px-3 rounded-md text-center font-medium"
-            onClick={() => setOpen(false)}
-            style={{ backgroundColor: '#E3DFD3', color: '#2F4231' }}
-          >
-            Contact
+          <Link href="/packages" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
+            Packages
+          </Link>
+          <Link href="/contact-us" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
+            Contact Us
           </Link>
         </nav>
       </div>
