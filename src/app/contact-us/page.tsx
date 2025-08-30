@@ -10,7 +10,7 @@ const Page = () => {
         <Navbar />
         <div className="max-w-7xl px-8 mx-auto text-[#E3DFD3] py-10">
           <p className="text-4xl">Contact Us</p>
-          <h1 className="text-8xl mt-2 font-sans">Let's Start Planning</h1>
+          <h1 className="text-8xl mt-2 font-sans">Let&apos;s Start Planning</h1>
         </div>
       </div>
 

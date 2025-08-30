@@ -27,8 +27,8 @@ const Portfolio = () => {
                   Fulfilling Your Dream Is Our Passion
                 </h2>
                 <p className="text-sm sm:text-base md:text-lg text-[#2F4231] max-w-lg leading-relaxed">
-                  This is a space to share more about the business: who's behind it, 
-                  what it does and what this site has to offer. It's an opportunity 
+                  This is a space to share more about the business: who&apos;s behind it, 
+                  what it does and what this site has to offer. It&apos;s an opportunity 
                   to tell the story behind the business or describe a special service 
                   or product it offers.
                 </p>
@@ -59,7 +59,7 @@ const Portfolio = () => {
                       className="w-full h-48 object-cover mb-6 rounded"
                     />
                     <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Nature Inspired</h3>
-                    <p className="text-lg text-[#2F4231] opacity-90 mb-2">Jia & Heng's</p>
+                    <p className="text-lg text-[#2F4231] opacity-90 mb-2">Jia &amp; Heng&apos;s</p>
                     <p className="text-sm text-[#2F4231] opacity-70 mb-2">
                       Venue: Pradhan Vatika
                     </p>
@@ -78,7 +78,7 @@ const Portfolio = () => {
                       className="w-full h-48 object-cover mb-6 rounded"
                     />
                     <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Floral Setting</h3>
-                    <p className="text-lg text-[#2F4231] opacity-90 mb-2">Brianna & Amir's</p>
+                    <p className="text-lg text-[#2F4231] opacity-90 mb-2">Brianna &amp; Amir&apos;s</p>
                     <p className="text-sm text-[#2F4231] opacity-70 mb-2">
                       Venue: All Sons Regency
                     </p>
@@ -97,7 +97,7 @@ const Portfolio = () => {
                       className="w-full h-48 object-cover mb-6 rounded"
                     />
                     <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Ocean Grace</h3>
-                    <p className="text-lg text-[#2F4231] opacity-90 mb-2">Megan & Gill's</p>
+                    <p className="text-lg text-[#2F4231] opacity-90 mb-2">Megan &amp; Gill&apos;s</p>
                     <p className="text-sm text-[#2F4231] opacity-70 mb-2">
                       Venue: Ocean View Resort
                     </p>
@@ -119,7 +119,7 @@ const Portfolio = () => {
                   className="w-full h-48 object-cover mb-6 rounded"
                 />
                 <h3 className="text-xl md:text-2xl text-[#2F4231] mb-2 font-serif">Nature Inspired</h3>
-                <p className="text-base md:text-lg text-[#2F4231] opacity-90 mb-2">Jia & Heng's</p>
+                <p className="text-base md:text-lg text-[#2F4231] opacity-90 mb-2">Jia &amp; Heng&apos;s</p>
                 <p className="text-sm text-[#2F4231] opacity-70 mb-2">Venue: Pradhan Vatika</p>
                 <p className="text-sm text-[#2F4231] opacity-80 leading-relaxed">Guests: 500</p>
               </div>
@@ -132,7 +132,7 @@ const Portfolio = () => {
                   className="w-full h-48 object-cover mb-6 rounded"
                 />
                 <h3 className="text-xl md:text-2xl text-[#2F4231] mb-2 font-serif">Floral Setting</h3>
-                <p className="text-base md:text-lg text-[#2F4231] opacity-90 mb-2">Brianna & Amir's</p>
+                <p className="text-base md:text-lg text-[#2F4231] opacity-90 mb-2">Brianna &amp; Amir&apos;s</p>
                 <p className="text-sm text-[#2F4231] opacity-70 mb-2">Venue: All Sons Regency</p>
                 <p className="text-sm text-[#2F4231] opacity-80 leading-relaxed">Guests: 150</p>
               </div>
@@ -145,7 +145,7 @@ const Portfolio = () => {
                   className="w-full h-48 object-cover mb-6 rounded"
                 />
                 <h3 className="text-xl md:text-2xl text-[#2F4231] mb-2 font-serif">Ocean Grace</h3>
-                <p className="text-base md:text-lg text-[#2F4231] opacity-90 mb-2">Megan & Gill's</p>
+                <p className="text-base md:text-lg text-[#2F4231] opacity-90 mb-2">Megan &amp; Gill&apos;s</p>
                 <p className="text-sm text-[#2F4231] opacity-70 mb-2">Venue: Ocean View Resort</p>
                 <p className="text-sm text-[#2F4231] opacity-80 leading-relaxed">Guests: 200</p>
               </div>
@@ -195,7 +195,7 @@ const Portfolio = () => {
                 
                 <div className="mt-6 lg:mt-8 px-2">
                   <h3 className="text-2xl lg:text-3xl xl:text-4xl text-[#2F4231] mb-4 lg:mb-6 font-serif leading-tight">Nature Inspired</h3>
-                  <p className="text-lg lg:text-xl xl:text-2xl text-[#2F4231] mb-3 lg:mb-4 font-light">Jia & Heng's</p>
+                  <p className="text-lg lg:text-xl xl:text-2xl text-[#2F4231] mb-3 lg:mb-4 font-light">Jia &amp; Heng&apos;s</p>
                   <p className="text-sm lg:text-base xl:text-lg text-[#2F4231] mb-2 lg:mb-3 opacity-70">Venue: Sierra Gardens</p>
                   <p className="text-sm lg:text-base xl:text-lg text-[#2F4231] leading-relaxed mb-4 lg:mb-6 opacity-80">Guests: 250</p>
                   
@@ -222,7 +222,7 @@ const Portfolio = () => {
                 
                 <div className="mt-6 lg:mt-8 px-2">
                   <h3 className="text-2xl lg:text-3xl xl:text-4xl text-[#2F4231] mb-4 lg:mb-6 font-serif leading-tight">Floral Setting</h3>
-                  <p className="text-lg lg:text-xl xl:text-2xl text-[#2F4231] mb-3 lg:mb-4 font-light">Brianna & Amir's</p>
+                  <p className="text-lg lg:text-xl xl:text-2xl text-[#2F4231] mb-3 lg:mb-4 font-light">Brianna &amp; Amir&apos;s</p>
                   <p className="text-sm lg:text-base xl:text-lg text-[#2F4231] mb-2 lg:mb-3 opacity-70">Venue: All Sons Regency</p>
                   <p className="text-sm lg:text-base xl:text-lg text-[#2F4231] leading-relaxed mb-4 lg:mb-6 opacity-80">Guests: 150</p>
                   
@@ -249,7 +249,7 @@ const Portfolio = () => {
                 
                 <div className="mt-6 lg:mt-8 px-2">
                   <h3 className="text-2xl lg:text-3xl xl:text-4xl text-[#2F4231] mb-4 lg:mb-6 font-serif leading-tight">Ocean Grace</h3>
-                  <p className="text-lg lg:text-xl xl:text-2xl text-[#2F4231] mb-3 lg:mb-4 font-light">Megan & Gill's</p>
+                  <p className="text-lg lg:text-xl xl:text-2xl text-[#2F4231] mb-3 lg:mb-4 font-light">Megan &amp; Gill&apos;s</p>
                   <p className="text-sm lg:text-base xl:text-lg text-[#2F4231] mb-2 lg:mb-3 opacity-70">Venue: Ocean View Resort</p>
                   <p className="text-sm lg:text-base xl:text-lg text-[#2F4231] leading-relaxed mb-4 lg:mb-6 opacity-80">Guests: 200</p>
                   

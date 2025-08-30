@@ -28,8 +28,8 @@ const About = () => {
                   Fulfilling Your Dream Is Our Passion
                 </h2>
                 <p className="text-sm sm:text-base md:text-lg text-[#2F4231] max-w-lg leading-relaxed">
-                  This is a space to share more about the business: who's behind it, 
-                  what it does and what this site has to offer. It's an opportunity 
+                  This is a space to share more about the business: who&apos;s behind it, 
+                  what it does and what this site has to offer. It&apos;s an opportunity 
                   to tell the story behind the business or describe a special service 
                   or product it offers.
                 </p>

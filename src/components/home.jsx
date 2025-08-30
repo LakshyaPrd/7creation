@@ -134,7 +134,7 @@ const Home = () => {
                     </h2>
                     <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
                       This is the space to describe the service and explain how customers or clients can 
-                      benefit from it. It's an opportunity to add a short description that includes relevant 
+                      benefit from it. It&apos;s an opportunity to add a short description that includes relevant 
                       details, like pricing, duration, location and how to book the service.
                     </p>
                   </div>
@@ -165,7 +165,7 @@ const Home = () => {
                     </h2>
                     <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
                       This is the space to describe the service and explain how customers or clients can 
-                      benefit from it. It's an opportunity to add a short description that includes relevant 
+                      benefit from it. It&apos;s an opportunity to add a short description that includes relevant 
                       details, like pricing, duration, location and how to book the service.
                     </p>
                   </div>
@@ -196,7 +196,7 @@ const Home = () => {
                     </h2>
                     <p className="text-sm sm:text-base lg:text-lg text-[#E3DFD3]/80 leading-relaxed">
                       This is the space to describe the service and explain how customers or clients can 
-                      benefit from it. It's an opportunity to add a short description that includes relevant 
+                      benefit from it. It&apos;s an opportunity to add a short description that includes relevant 
                       details, like pricing, duration, location and how to book the service.
                     </p>
                   </div>
