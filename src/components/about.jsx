@@ -89,11 +89,11 @@ const About = () => {
 
             {/* Card 2 - Creative Director */}
             <div className="flex justify-center">
-              <div className="bg-[#E3DFD3] text-center px-6 py-8 w-80 shadow-2xl rounded-lg border-4 border-[#2F4231]">
+              <div className="bg-white text-center px-6 py-8 w-80 ">
                 <img
                   src="/creative.png"
                   alt="Creative Director"
-                  className="w-full h-44 object-cover mb-6 rounded"
+                  className="w-full h-[250px] object-cover mb-6 rounded"
                 />
                 <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Rahul Sharma</h3>
                 <p className="text-lg text-[#2F4231] opacity-90 mb-2">Creative Director</p>
@@ -112,7 +112,7 @@ const About = () => {
                 <img
                   src="/operation.jpg"
                   alt="Operations Manager"
-                  className="w-full h-44 object-cover mb-6 rounded"
+                  className="w-full h-[250px] object-cover mb-6 rounded"
                 />
                 <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Lakshya Pradhan</h3>
                 <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">Operations Manager</p>
