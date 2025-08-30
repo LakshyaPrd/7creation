@@ -96,7 +96,7 @@ const Home = () => {
           
 
           {/* Our Expertise Section */}
-          <section className="w-full bg-[#2F4231] py-10 sm:py-16 lg:py-20">
+          <section id="expertise" className="w-full bg-[#2F4231] py-10 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
             <h3 className="text-lg sm:text-xl font-serif font-light text-[#E3DFD3]/80 text-left mb-3 sm:mb-4">
               Our Expertise
@@ -364,28 +364,26 @@ const Home = () => {
       </div>
 
       {/*planning*/}
-      <div className="w-full flex h-screen relative pt-16 bg-[#2f4330]">
-        {/* Left Green Section - smaller width */}
-        <div className="bg-[#2f4330] w-4/12 relative z-10"></div>
+      <div className="w-full flex flex-col lg:flex-row h-screen relative pt-8 sm:pt-12 lg:pt-16 bg-[#2f4330]">
+        {/* Left Green Section - responsive width */}
+        <div className="bg-[#2f4330] w-full lg:w-4/12 relative z-10 flex lg:block"></div>
 
-        {/* Right Image Section - wider width with reduced opacity */}
-        <div className="w-8/12 relative z-10">
+        {/* Right Image Section - responsive width */}
+        <div className="w-full lg:w-8/12 z-10 absolute lg:relative inset-0 lg:inset-auto">
           <img
             src="/last.avif"
             alt="Wedding Decoration"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/50 lg:bg-black/50"></div>
         </div>
         
-        
-
-        {/* Text Positioned Over Both */}
-        <div className="absolute top-1/3 left-12 transform -translate-y-1/2 z-20 max-w-7xl px-28 mt-8">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
+        {/* Text Positioned Over Both - responsive positioning */}
+        <div className="absolute top-1/2 lg:top-1/3 left-4 sm:left-6 lg:left-12 transform -translate-y-1/2 z-20 max-w-6xl px-4 sm:px-8 lg:px-28 mt-4 lg:mt-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#e2dfd2] leading-tight mb-2 lg:mb-0">
             Let's Start Planning the
           </h1>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
             Best Day of Your Life
           </h1>
         </div>

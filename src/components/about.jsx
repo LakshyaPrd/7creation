@@ -12,7 +12,7 @@ const About = () => {
           {/* Left scrolling content */}
           <div className="bg-[#2F4231] w-full lg:w-7/12 relative">
             {/* Hero Section */}
-            <div className="h-auto lg:h-screen flex flex-col justify-start pt-8 pb-8 lg:pb-0">
+            <div className="h-auto lg:h-screen flex flex-col justify-start pt-8 lg:pb-0">
               <div className="px-4 sm:px-6 lg:px-12 xl:px-36">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-serif text-[#E3DFD3] leading-tight mb-4">
                   We Are
@@ -76,7 +76,7 @@ const About = () => {
                   alt="CEO"
                   className="w-full h-44 object-cover mb-6 rounded"
                 />
-                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">John Doe</h3>
+                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Rohit Sharma</h3>
                 <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">CEO & Founder</p>
                 <p className="text-sm text-[#E3DFD3] opacity-70 mb-4">
                   ceo@mysite.com
@@ -136,32 +136,32 @@ const About = () => {
             
             {/* Card 1 - CEO */}
             <div className="sticky top-20 z-10 flex justify-center items-center pointer-events-none" style={{height: '100vh'}}>
-              <div className="bg-[#2F4231] text-center px-10 py-10 w-80 shadow-2xl rounded-lg pointer-events-auto mx-4">
+              <div className="bg-[#2F4231] text-center px-10 py-10 h-[550px] w-[400px] pointer-events-auto mx-4">
                 <img
                   src="/ceo.jpg"
                   alt="CEO"
                   className="w-full h-48 object-cover mb-6 rounded"
                 />
-                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">John Doe</h3>
+                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Rohit Sharma</h3>
                 <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">CEO & Founder</p>
                 <p className="text-sm text-[#E3DFD3] opacity-70 mb-4">
                   ceo@mysite.com
                 </p>
                 <p className="text-sm text-[#E3DFD3] opacity-80 leading-relaxed">
-                  Visionary leader with 15+ years in event management and creative design.
+                  Visionary leader with 5+ years in event management and creative design.
                 </p>
               </div>
             </div>
 
             {/* Card 2 - Creative Director */}
             <div className="sticky top-20 z-20 flex justify-center items-center pointer-events-none" style={{height: '100vh'}}>
-              <div className="bg-[#E3DFD3] text-center px-10 py-10 w-80 shadow-2xl rounded-lg border-4 border-[#2F4231] pointer-events-auto mx-4">
+              <div className="bg-white text-center px-10 py-10 h-[550px] w-[400px] pointer-events-auto mx-4">
                 <img
-                  src="/creative-director.jpg"
+                  src="/creative.png"
                   alt="Creative Director"
-                  className="w-full h-48 object-cover mb-6 rounded"
+                  className="w-full h-[250px] object-cover mb-6 rounded"
                 />
-                <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Jane Smith</h3>
+                <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Rahul Sharma</h3>
                 <p className="text-lg text-[#2F4231] opacity-90 mb-2">Creative Director</p>
                 <p className="text-sm text-[#2F4231] opacity-70 mb-4">
                   jane@mysite.com
@@ -174,13 +174,13 @@ const About = () => {
 
             {/* Card 3 - Operations Manager */}
             <div className="sticky top-20 z-30 flex justify-center items-center pointer-events-none" style={{height: '100vh'}}>
-              <div className="bg-[#2F4231] text-center px-10 py-10 w-80 shadow-2xl rounded-lg pointer-events-auto mx-4">
+              <div className="bg-[#2F4231] text-center px-10 py-10 h-[550px] w-[400px] pointer-events-auto mx-4">
                 <img
-                  src="/operations-manager.jpg"
+                  src="/operation.jpg"
                   alt="Operations Manager"
                   className="w-full h-48 object-cover mb-6 rounded"
                 />
-                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Mike Johnson</h3>
+                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Lakshya Pradhan</h3>
                 <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">Operations Manager</p>
                 <p className="text-sm text-[#E3DFD3] opacity-70 mb-4">
                   mike@mysite.com
@@ -197,7 +197,7 @@ const About = () => {
       </div>
 
       {/* Packages Section */}
-      <section className="w-full bg-[#E3DFD3] py-20">
+      <section id="packages" className="w-full bg-[#E3DFD3] py-20">
         <div className="max-w-7xl mx-auto px-8">
           {/* Section Header */}
           <div className="mb-16">
@@ -216,7 +216,7 @@ const About = () => {
             {/* Package 1 - Full Wedding Planning (Image Left, Text Right) */}
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
               <div className="lg:w-1/2">
-                <div className="h-80 lg:h-[650px] bg-gray-200 rounded-lg overflow-hidden">
+                <div className="h-80 lg:h-[650px] bg-gray-200 overflow-hidden">
                   <img 
                     src="/full-wedding.avif" 
                     alt="Full Wedding Planning"
@@ -243,7 +243,7 @@ const About = () => {
             {/* Package 2 - Partial Wedding Planning (Image Right, Text Left) */}
             <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-12">
               <div className="lg:w-1/2">
-                <div className="h-80 lg:h-[650px] bg-gray-200 rounded-lg overflow-hidden">
+                <div className="h-80 lg:h-[650px] bg-gray-200 overflow-hidden">
                   <img 
                     src="/partial-wedding.avif" 
                     alt="Partial Wedding Planning"
@@ -270,7 +270,7 @@ const About = () => {
             {/* Package 3 - Day-of Coordination (Image Left, Text Right) */}
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
               <div className="lg:w-1/2">
-                <div className="h-80 lg:h-[650px] bg-gray-200 rounded-lg overflow-hidden">
+                <div className="h-80 lg:h-[650px] bg-gray-200 overflow-hidden">
                   <img 
                     src="/customized-event.avif" 
                     alt="Day-of Coordination"
@@ -331,7 +331,7 @@ const About = () => {
           </h1>
           
           {/* Get Started Button */}
-          <div className="mt-6 sm:mt-8 md:mt-12 lg:mt-16 flex justify-center lg:justify-end lg:pr-32">
+          <div className="mt-6 sm:mt-8 md:mt-12 lg:mt-16 flex justify-center lg:justify-center">
             <button className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-[#2f4330] text-[#e2dfd2] text-base sm:text-lg md:text-xl lg:text-2xl font-medium border-2 border-[#e2dfd2] transition-all duration-300 hover:bg-[#e2dfd2] hover:text-[#2f4330] flex items-center justify-center shadow-lg">
               Get Started
             </button>
