@@ -8,7 +8,7 @@ const Home = () => {
       {/* Hero */}
       <div className="w-full bg-[#2F4231]">
         <Navbar />
-        <div className="max-w-7xl px-4 sm:px-6 md:px-6 mx-auto text-[#E3DFD3] py-8 sm:py-10 md:py-12">
+        <div className="max-w-7xl px-4 sm:px-6 md:px-6 lg:ml-28 xl:ml-36 2xl:ml-48 mx-auto text-[#E3DFD3] py-8 sm:py-10 md:py-12">
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mt-2 font-sans font-medium leading-tight">Bespoke Weddings</h1>
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mt-2 font-sans font-medium leading-tight">Planned to Perfection</h1>
         </div>
@@ -17,17 +17,15 @@ const Home = () => {
       {/* Combined section with overlapping video */}
       <section className="w-full bg-[#2F4231] text-[#E3DFD3] relative">
         <div className="grid grid-cols-1 lg:grid-cols-3">
-          <div className="w-full ">
-            <div className="max-w-6xl px-4 sm:px-6 md:px-8 ml-4 sm:ml-6 md:ml-8 lg:ml-28 mx-auto py-8 sm:py-10 md:py-12">
-              <div className="space-y-4 sm:space-y-6">
-                <h2 className="text-xl sm:text-2xl md:text-2xl text-[#E3DFD3]/80 font-serif leading-tight">
-                  Full-Service Event Planning & Design Company
-                </h2>
-              </div>
+          <div className="w-full">
+            <div className="max-w-7xl px-4 sm:px-6 md:px-6 lg:ml-28 xl:ml-36 2xl:ml-48 mx-auto py-8 sm:py-10 md:py-12">
+              <h2 className="text-xl sm:text-2xl md:text-2xl text-[#E3DFD3]/80 font-serif leading-tight">
+                Full-Service Event Planning & Design Company
+              </h2>
             </div>
           </div>
 
-          <div className="relative h-[400px] xs:h-[450px] sm:h-[520px] md:h-[600px] lg:h-[800px] xl:h-[800px] 2xl:h-[800px] z-50 lg:col-span-2">
+          <div className="relative h-[400px] sm:h-[520px] md:h-[600px] lg:h-[800px] xl:h-[800px] 2xl:h-[800px] z-50 lg:col-span-2">
             <video
               src="/landing.mp4"
               poster="/video-poster.jpg"
