@@ -3,14 +3,21 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
+type Card = {
+  title: string;
+  description: string;
+  src: string;
+  images: string[];
+};
+
 export function ExpandableCardDemo() {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState<Card | null>(null);
   const id = useId();
   const ref = useRef(null);
 
   useEffect(() => {
-    function onKeyDown(event) {
-      if (event.key === "Escape") setActive(false);
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") setActive(null);
     }
     document.body.style.overflow =
       active && typeof active === "object" ? "hidden" : "auto";
@@ -65,7 +72,7 @@ export function ExpandableCardDemo() {
                 </motion.p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {active.images.map((img, i) => (
+                  {active.images.map((img: string, i: number) => (
                     <img
                       key={i}
                       src={img}
