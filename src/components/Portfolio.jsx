@@ -11,7 +11,7 @@ const Portfolio = () => {
           {/* Left scrolling content */}
           <div className="bg-[#2F4231] w-full lg:w-1/2 relative">
             {/* Hero Section */}
-            <div className="h-auto lg:h-screen flex flex-col justify-start pt-8  lg:pb-0">
+            <div className="h-auto lg:min-h-screen flex flex-col justify-start pt-8 lg:pb-0">
               <div className="px-4 sm:px-6 lg:px-12 xl:px-36">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-8xl font-serif text-[#E3DFD3] leading-tight mb-4">
                   Featured
@@ -23,14 +23,14 @@ const Portfolio = () => {
               
               {/* Bottom Light Section */}
               <div className="mt-10 lg:mt-auto bg-[#E3DFD3] px-4 sm:px-6 lg:px-12 xl:px-36 py-8 sm:py-10 lg:py-12 xl:py-32">
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#2F4231] font-light mb-4 sm:mb-6">
-                  Fulfilling Your Dream Is Our Passion
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl text-[#2F4231] font-light mb-4 sm:mb-6">
+                  Har Ek Celebration Zaroori Hota Hai
                 </h2>
-                <p className="text-sm sm:text-base md:text-lg text-[#2F4231] max-w-lg leading-relaxed">
-                  This is a space to share more about the business: who&apos;s behind it, 
-                  what it does and what this site has to offer. It&apos;s an opportunity 
-                  to tell the story behind the business or describe a special service 
-                  or product it offers.
+                <p className="text-sm sm:text-base md:text-lg text-[#2F4231] max-w-lg leading-relaxed text-justify">
+                  At 7 Creation, we believe every event tells a story — your story. Our portfolio is a reflection of the dreams we&apos;ve brought to life through meticulous planning, thoughtful design, and heartfelt execution. From intimate gatherings to grand celebrations, every project showcases our commitment to elegance, creativity, and precision.
+                </p>
+                <p className="text-sm sm:text-base md:text-lg text-[#2F4231] max-w-lg leading-relaxed mt-4 text-justify">
+                  Each event is a unique canvas where vision meets artistry — blending decor, ambiance, and emotion to create unforgettable experiences. Explore our curated collection of weddings, corporate events, and bespoke celebrations that embody our philosophy: &quot;Fulfilling your dream is our passion.&quot;
                 </p>
               </div>
             </div>
@@ -176,7 +176,7 @@ const Portfolio = () => {
         </div>
 
         {/* Desktop Sticky Cards - UPDATED WITH RESPONSIVE SPACERS */}
-        <div className="hidden lg:block absolute top-0 left-0 w-full pointer-events-none z-50 lg:h-[450vh] xl:h-[480vh] 2xl:h-[500vh]">
+        <div className="hidden lg:block absolute top-0 left-0 w-full pointer-events-none z-50 lg:h-[450vh] xl:h-[480vh] 2xl:h-[500vh] mt-32">
           <div className="relative lg:h-[450vh] xl:h-[480vh] 2xl:h-[500vh]">
             {/* Responsive Spacer */}
             <div className="lg:h-[120vh] xl:h-[125vh] 2xl:h-[130vh]"></div>

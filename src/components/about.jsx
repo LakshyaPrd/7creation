@@ -1,347 +1,186 @@
-import React from 'react'
-import Navbar from './navbar'
-import Footer from './footer'
+import React from "react";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 const About = () => {
   return (
-    <div className='min-h-screen'>
-      
-      <div className="w-full bg-[#2F4231]">
-        <Navbar />
-        <div className="w-full flex flex-col lg:flex-row relative">
-          {/* Left scrolling content */}
-          <div className="bg-[#2F4231] w-full lg:w-7/12 relative">
-            {/* Hero Section */}
-            <div className="h-auto lg:h-screen flex flex-col justify-start pt-8 lg:pb-0">
-              <div className="px-4 sm:px-6 lg:px-12 xl:px-36">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-serif text-[#E3DFD3] leading-tight mb-4">
-                  We Are
-                </h1>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-serif text-[#E3DFD3] leading-tight">
-                  7 Creation
-                </h1>
-              </div>
-              
-              {/* Bottom Light Section */}
-              <div className="mt-8 lg:mt-auto bg-[#E3DFD3] px-4 sm:px-6 lg:px-12 xl:px-36 py-8 sm:py-10 lg:py-12 xl:py-16">
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#2F4231] font-light mb-4 sm:mb-6">
-                  Fulfilling Your Dream Is Our Passion
-                </h2>
-                <p className="text-sm sm:text-base md:text-lg text-[#2F4231] max-w-lg leading-relaxed">
-                  This is a space to share more about the business: who&apos;s behind it, 
-                  what it does and what this site has to offer. It&apos;s an opportunity 
-                  to tell the story behind the business or describe a special service 
-                  or product it offers.
-                </p>
-              </div>
-            </div>
+    <div className="bg-[#E3DFD3] text-[#2F4231] min-h-screen">
+      <Navbar />
 
-            {/* Mobile/Tablet Image Section - Shows below paragraph on smaller screens */}
-            <div className="block lg:hidden relative">
-              <img 
-                src="/about1.avif" 
-                alt="Wedding Decoration" 
-                className="w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover" 
-              />
-            </div>
+      {/* HERO SECTION */}
+      <section className="relative w-full h-[90vh] overflow-hidden">
+        <img
+          src="/about1.avif"
+          alt="Team"
+          className="absolute inset-0 w-full h-full object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-[#2F4231]/30"></div>
+        <h1 className="absolute bottom-0 left-0 text-[#E3DFD3] text-4xl sm:text-5xl lg:text-7xl font-serif tracking-wide p-6 md:p-10 lg:p-16 z-10">
+          MEET OUR TEAM
+        </h1>
+      </section>
 
-            {/* Scrolling content that goes under the fixed image - Desktop only */}
-            <div className="hidden lg:block bg-[#E3DFD3] relative z-10">
-              {/* Spacer sections for card scroll duration */}
-              <div className="h-screen"></div>
-              <div className="h-screen"></div>
-              <div className="h-screen"></div>
-              <div className="h-screen"></div>
-            </div>
-          </div>
+      {/* EXPERIENCE BRILLIANCE STYLE SECTION */}
+      <section className="py-20 px-6 md:px-16 lg:px-32 bg-[#E3DFD3] text-center">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif mb-10 tracking-wide">
+          7 CREATION
+        </h2>
+        <p className="italic text-lg sm:text-xl mb-6">
+          Har Ek Celebration Zaroori Hota Hai.
+        </p>
+        <p className="max-w-5xl mx-auto text-base sm:text-lg leading-relaxed mb-8">
+          With over 25 years of experience, <strong>7 Creation</strong> is an
+          event management company driven by passion and creativity. We
+          specialize in curating unforgettable celebrations — from intimate
+          weddings to large-scale events — all crafted with emotion, artistry,
+          and precision.
+        </p>
+        <p className="max-w-5xl mx-auto text-base sm:text-lg leading-relaxed">
+          We bring together design, planning, and execution seamlessly — making
+          sure every client’s story shines through our work. Our in-house
+          tentage and fabrication allow us to manage every detail under one
+          roof, ensuring high quality, cohesive experiences, and flawless
+          results.
+        </p>
 
-          {/* Right fixed image - Only visible on large screens */}
-          <div className="hidden lg:block w-5/12 sticky top-0 h-screen">
-            <img 
-              src="/about1.avif" 
-              alt="Wedding Decoration" 
-              className="w-full h-full object-cover" 
+        {/* Logos / Partners Section */}
+        {/*
+        <div className="flex flex-wrap justify-center items-center gap-10 mt-16 opacity-80">
+          <img
+            src="/partner1.png"
+            alt="Partner 1"
+            className="h-12 sm:h-16 object-contain grayscale hover:grayscale-0 transition"
+          />
+          <img
+            src="/partner2.png"
+            alt="Partner 2"
+            className="h-12 sm:h-16 object-contain grayscale hover:grayscale-0 transition"
+          />
+          <img
+            src="/partner3.png"
+            alt="Partner 3"
+            className="h-12 sm:h-16 object-contain grayscale hover:grayscale-0 transition"
+          />
+          <img
+            src="/partner4.png"
+            alt="Partner 4"
+            className="h-12 sm:h-16 object-contain grayscale hover:grayscale-0 transition"
+          />
+        </div>
+        */}
+      </section>
+
+      {/* TEAM MEMBERS SECTION */}
+      <section className="bg-[#E3DFD3] py-20 px-6 md:px-16 lg:px-32">
+        <div className="max-w-7xl mx-auto text-center">
+          {/* CEO */}
+          <div className="mb-24">
+          <h3 className="text-3xl sm:text-4xl font-serif mb-6">Suresh Sharma</h3>
+            <img
+              src="/ceo.jpg"
+              alt="Suresh Sharma"
+              className="w-full max-h-[650px] object-cover rounded-xl shadow-xl"
             />
-          </div>
-        </div>
-
-        {/* Mobile Team Cards Section - Simple layout without sticky effect */}
-        <div className="block lg:hidden bg-[#E3DFD3] py-12">
-          <div className="space-y-8 px-4">
-            {/* Card 1 - CEO */}
-            <div className="flex justify-center">
-              <div className="bg-[#2F4231] text-center px-6 py-8 w-80 shadow-2xl rounded-lg">
-                <img
-                  src="/ceo.jpg"
-                  alt="CEO"
-                  className="w-full h-44 object-cover mb-6 rounded"
-                />
-                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Rohit Sharma</h3>
-                <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">CEO & Founder</p>
-                <p className="text-sm text-[#E3DFD3] opacity-70 mb-4">
-                  ceo@mysite.com
-                </p>
-                <p className="text-sm text-[#E3DFD3] opacity-80 leading-relaxed">
-                  Visionary leader with 5+ years in event management and creative design.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2 - Creative Director */}
-            <div className="flex justify-center">
-              <div className="bg-white text-center px-6 py-8 w-80 ">
-                <img
-                  src="/creative.png"
-                  alt="Creative Director"
-                  className="w-full h-[250px] object-cover mb-6 rounded"
-                />
-                <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Rahul Sharma</h3>
-                <p className="text-lg text-[#2F4231] opacity-90 mb-2">Creative Director</p>
-                <p className="text-sm text-[#2F4231] opacity-70 mb-4">
-                  jane@mysite.com
-                </p>
-                <p className="text-sm text-[#2F4231] opacity-80 leading-relaxed">
-                  Award-winning designer specializing in luxury weddings and corporate events.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 3 - Operations Manager */}
-            <div className="flex justify-center">
-              <div className="bg-[#2F4231] text-center px-6 py-8 w-80 shadow-2xl rounded-lg">
-                <img
-                  src="/operation.jpg"
-                  alt="Operations Manager"
-                  className="w-full h-[250px] object-cover mb-6 rounded"
-                />
-                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Lakshya Pradhan</h3>
-                <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">Operations Manager</p>
-                <p className="text-sm text-[#E3DFD3] opacity-70 mb-4">
-                  mike@mysite.com
-                </p>
-                <p className="text-sm text-[#E3DFD3] opacity-80 leading-relaxed">
-                  Expert in logistics and project management, ensuring flawless event execution.
-                </p>
-              </div>
+            <div className="mt-8 max-w-6xl mx-auto space-y-3">
+              
+              <p className="text-base leading-relaxed mt-4">
+                Suresh Sharma is the visionary Founder of Choudhary Tent House and serves as a guiding mentor at 7Creation. With over 25 years of experience in the event and tentage industry, he has built a strong legacy of trust, craftsmanship, and excellence.
+                His deep industry knowledge, operational expertise, and commitment to quality continue to inspire the next generation at 7Creations, shaping the company’s values of integrity, innovation, and perfection in every celebration
+                .
+              </p>
             </div>
           </div>
-        </div>
 
-        {/* Desktop Sticky Cards Section - Only on large screens */}
-        <div className="hidden lg:block absolute top-0 left-0 w-full pointer-events-none z-50" style={{height: 'calc(500vh)'}}>
-          {/* Container with top padding to start cards after hero section */}
-          <div className="relative" style={{height: 'calc(500vh)'}}>
-            {/* Desktop padding: original spacing */}
-            <div style={{height: '150vh'}}></div>
-            
-            {/* Card 1 - CEO */}
-            <div className="sticky top-20 z-10 flex justify-center items-center pointer-events-none" style={{height: '100vh'}}>
-              <div className="bg-[#2F4231] text-center px-10 py-10 h-[550px] w-[400px] pointer-events-auto mx-4">
-                <img
-                  src="/ceo.jpg"
-                  alt="CEO"
-                  className="w-full h-48 object-cover mb-6 rounded"
-                />
-                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Rohit Sharma</h3>
-                <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">CEO & Founder</p>
-                <p className="text-sm text-[#E3DFD3] opacity-70 mb-4">
-                  ceo@mysite.com
-                </p>
-                <p className="text-sm text-[#E3DFD3] opacity-80 leading-relaxed">
-                  Visionary leader with 5+ years in event management and creative design.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2 - Creative Director */}
-            <div className="sticky top-20 z-20 flex justify-center items-center pointer-events-none" style={{height: '100vh'}}>
-              <div className="bg-white text-center px-10 py-10 h-[550px] w-[400px] pointer-events-auto mx-4">
-                <img
-                  src="/creative.png"
-                  alt="Creative Director"
-                  className="w-full h-[250px] object-cover mb-6 rounded"
-                />
-                <h3 className="text-2xl text-[#2F4231] mb-2 font-serif">Rahul Sharma</h3>
-                <p className="text-lg text-[#2F4231] opacity-90 mb-2">Creative Director</p>
-                <p className="text-sm text-[#2F4231] opacity-70 mb-4">
-                  jane@mysite.com
-                </p>
-                <p className="text-sm text-[#2F4231] opacity-80 leading-relaxed">
-                  Award-winning designer specializing in luxury weddings and corporate events.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 3 - Operations Manager */}
-            <div className="sticky top-20 z-30 flex justify-center items-center pointer-events-none" style={{height: '100vh'}}>
-              <div className="bg-[#2F4231] text-center px-10 py-10 h-[550px] w-[400px] pointer-events-auto mx-4">
-                <img
-                  src="/operation.jpg"
-                  alt="Operations Manager"
-                  className="w-full h-48 object-cover mb-6 rounded"
-                />
-                <h3 className="text-2xl text-[#E3DFD3] mb-2 font-serif">Lakshya Pradhan</h3>
-                <p className="text-lg text-[#E3DFD3] opacity-90 mb-2">Operations Manager</p>
-                <p className="text-sm text-[#E3DFD3] opacity-70 mb-4">
-                  mike@mysite.com
-                </p>
-                <p className="text-sm text-[#E3DFD3] opacity-80 leading-relaxed">
-                  Expert in logistics and project management, ensuring flawless event execution.
-                </p>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-      </div>
-
-      {/* Packages Section */}
-      <section id="packages" className="w-full bg-[#E3DFD3] py-20">
-        <div className="max-w-7xl mx-auto px-8">
-          {/* Section Header */}
-          <div className="mb-16">
-            <p className="text-[#2F4231] text-3xl mb-4">Packages</p>
-            <h2 className="text-5xl md:text-6xl lg:text-8xl font-serif text-[#2F4231] leading-tight">
-              Choose the Plan That
-            </h2>
-            <h2 className="text-5xl md:text-6xl lg:text-8xl font-serif text-[#2F4231] leading-tight">
-              Suits You the Best
-            </h2>
-          </div>
-
-          {/* Service Cards - Alternating Layout */}
-          <div className="space-y-22">
-            
-            {/* Package 1 - Full Wedding Planning (Image Left, Text Right) */}
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-              <div className="lg:w-1/2">
-                <div className="h-80 lg:h-[650px] bg-gray-200 overflow-hidden">
-                  <img 
-                    src="/full-wedding.avif" 
-                    alt="Full Wedding Planning"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="lg:w-1/2">
-                <div className="mb-4">
-                  <span className="text-2xl text-[#2F4231]">01</span>
-                </div>
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#2F4231] mb-4 leading-tight">
-                  Full Wedding Planning
+          {/* OTHER MEMBERS */}
+          <h2 className="text-2xl sm:text-4xl font-serif tracking-wide mb-4">
+            MEET ROHIT, RAHUL AND LAKSHYA
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 lg:gap-16 mt-8">
+            {/* Member 2 */}
+            <div>
+              <img
+                src="/ceo.jpg"
+                alt="Rahul Sharma"
+                className="w-full h-[550px] object-cover rounded-xl shadow-lg"
+              />
+              <div className="mt-6 space-y-2">
+                <h3 className="text-2xl sm:text-3xl font-serif">
+                  Rohit Sharma
                 </h3>
-                <p className="text-xl text-[#2F4231] opacity-90 mb-6">
-                  Leave it to us
-                </p>
-                <p className="text-base text-[#2F4231] opacity-90 leading-relaxed">
-                  Describe the service and how customers or clients can benefit from it. This is the place to add a short description with relevant details, like pricing, duration and how to book.
+                <p className="text-lg opacity-80">Co- Founder, 7 Creation</p>
+                <p className="text-base leading-relaxed mt-3 max-w-xl mx-auto text-justify">
+                Rohit Sharma is a certified event planner with over three years of professional experience in the event management industry. His expertise lies in planning, operation and client experience. In addition to his event management background, Rohit also holds a Bachelor of Laws (LLB) degree, 
+                which adds a strong foundation in compliance, contracts, and organizational discipline.
                 </p>
               </div>
             </div>
 
-            {/* Package 2 - Partial Wedding Planning (Image Right, Text Left) */}
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-12">
-              <div className="lg:w-1/2">
-                <div className="h-80 lg:h-[650px] bg-gray-200 overflow-hidden">
-                  <img 
-                    src="/partial-wedding.avif" 
-                    alt="Partial Wedding Planning"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="lg:w-1/2">
-                <div className="mb-4">
-                  <span className="text-2xl text-[#2F4231]">02</span>
-                </div>
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#2F4231] mb-4 leading-tight">
-                  Partial Wedding Planning
+            {/* Member 3 */}
+            <div>
+              <img
+                src="/creative.png"
+                alt="Lakshya Pradhan"
+                className="w-full h-[550px] object-cover rounded-xl shadow-lg"
+              />
+              <div className="mt-6 space-y-2">
+                <h3 className="text-2xl sm:text-3xl font-serif">
+                  CA Rahul Sharma
                 </h3>
-                <p className="text-xl text-[#2F4231] opacity-90 mb-6">
-                  We'll help you along the way
-                </p>
-                <p className="text-base text-[#2F4231] opacity-90 leading-relaxed">
-                  Describe the service and how customers or clients can benefit from it. This is the place to add a short description with relevant details, like pricing, duration and how to book.
+                <p className="text-lg opacity-80">Co- Founder, 7 Creation</p>
+                
+                <p className="text-base leading-relaxed mt-3 max-w-xl mx-auto text-justify">
+                Rahul Sharma is a qualified Chartered Accountant and Co-Founder of 7Creations, bringing strong financial 
+                acumen and strategic insight to the company. Passionate about event management and business innovation, Rahul oversees vendor relations, 
+                financial planning, compliance, and key strategic decisions that drive the organization’s growth.
                 </p>
               </div>
             </div>
-
-            {/* Package 3 - Day-of Coordination (Image Left, Text Right) */}
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-              <div className="lg:w-1/2">
-                <div className="h-80 lg:h-[650px] bg-gray-200 overflow-hidden">
-                  <img 
-                    src="/customized-event.avif" 
-                    alt="Day-of Coordination"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="lg:w-1/2">
-                <div className="mb-4">
-                  <span className="text-2xl text-[#2F4231]">03</span>
-                </div>
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#2F4231] mb-4 leading-tight">
-                  Customized Event
+            <div className="sm:col-span-2 flex flex-col items-center">
+              <img
+                src="/operation.jpg"
+                alt="Lakshya Pradhan"
+                className="w-full max-w-[550px] h-[550px] object-cover rounded-xl shadow-lg"
+              />
+              <div className="mt-6 space-y-2 text-center">
+                <h3 className="text-2xl sm:text-3xl font-serif">
+                  Lakshya Pradhan
                 </h3>
-                <p className="text-xl text-[#2F4231] opacity-90 mb-6">
-                  Perfect execution on your big day
-                </p>
-                <p className="text-base text-[#2F4231] opacity-90 leading-relaxed">
-                  Describe the service and how customers or clients can benefit from it. This is the place to add a short description with relevant details, like pricing, duration and how to book.
+                <p className="text-lg opacity-80">Head of IT Operations & Marketing</p>
+                
+                <p className="text-base leading-relaxed mt-3 max-w-xl mx-auto text-justify">
+                Lakshya Pradhan, a qualified Computer Science Engineer, leads the IT Operations and Marketing divisions at 7Creations. 
+                With a strong technical background and problem-solving mindset, he ensures the company's digital infrastructure and internal systems run seamlessly.
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <div className="w-full flex flex-col lg:flex-row h-auto lg:h-full relative bg-[#2f4330] min-h-[600px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-[950px]">
-        {/* Left Green Section - smaller width */}
-        <div className="bg-[#2f4330] w-full lg:w-4/12 relative z-10 h-32 lg:h-auto"></div>
-
-        {/* Right Image Section - wider width with reduced opacity */}
-        <div className="w-full lg:w-8/12 relative z-10 order-first lg:order-last">
-          <img
-            src="/special.avif"
-            alt="Wedding Decoration"
-            className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/55"></div>
+      {/* CTA SECTION */}
+      <section className="relative w-full bg-[#2F4231] text-[#E3DFD3] flex flex-col items-center justify-center py-24 text-center overflow-hidden">
+        <img
+          src="/special.avif"
+          alt="Special Event"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        />
+        <div className="relative z-10 px-6 sm:px-10">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif mb-6">
+            Let's Create Something Extraordinary
+          </h2>
+          <p className="text-lg sm:text-xl mb-8 opacity-90">
+            Share your vision with us — we’ll craft an experience beyond
+            imagination.
+          </p>
+          <button className="px-10 py-4 rounded-full border-2 border-[#E3DFD3] text-[#E3DFD3] hover:bg-[#E3DFD3] hover:text-[#2F4231] transition-all duration-300 font-medium text-lg">
+            Get Started
+          </button>
         </div>
-        
-
-        {/* Text Positioned Over Both */}
-        <div className="absolute top-1/2 lg:top-1/2 transform -translate-y-1/2 z-20 w-full max-w-none lg:max-w-6xl px-4 sm:px-6 md:px-8 lg:px-28">
-          <p className='text-[#e2dfd2] text-lg sm:text-xl md:text-2xl lg:text-3xl text-medium mb-2'>Share your vision with us</p>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
-            We'll Create the
-          </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
-            Best Plan For
-          </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
-            Your Special
-          </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-serif text-[#e2dfd2] leading-tight">
-            Day
-          </h1>
-          
-          {/* Get Started Button */}
-          <div className="mt-6 sm:mt-8 md:mt-12 lg:mt-16 flex justify-center lg:justify-center">
-            <button className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-[#2f4330] text-[#e2dfd2] text-base sm:text-lg md:text-xl lg:text-2xl font-medium border-2 border-[#e2dfd2] transition-all duration-300 hover:bg-[#e2dfd2] hover:text-[#2f4330] flex items-center justify-center shadow-lg">
-              Get Started
-            </button>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

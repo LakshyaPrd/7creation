@@ -8,7 +8,6 @@ export default function Navbar() {
 
   return (
     <header
-      
       style={{ backgroundColor: '#2F4231', color: '#E3DFD3' }}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -18,7 +17,7 @@ export default function Navbar() {
           className="text-lg md:text-xl font-semibold tracking-tight"
           style={{ color: '#E3DFD3' }}
         >
-          7 Creations
+          7 Creation
         </Link>
 
         {/* Desktop Nav */}
@@ -32,9 +31,11 @@ export default function Navbar() {
           <Link href="/services" className="text-lg hover:opacity-90 text-[#E3DFD3]">
             Services
           </Link>
-          <Link href="/packages" className="text-lg hover:opacity-90 text-[#E3DFD3]">
-            Packages
+          
+          <Link href="/venue" className="text-lg hover:opacity-90 text-[#E3DFD3]">
+            Venue
           </Link>
+          
           <Link href="/contact-us" className="text-lg hover:opacity-90 text-[#E3DFD3]">
             Contact Us
           </Link>
@@ -84,8 +85,8 @@ export default function Navbar() {
           <Link href="/services" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
             Services
           </Link>
-          <Link href="/packages" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
-            Packages
+          <Link href="/venue" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
+            Venue
           </Link>
           <Link href="/contact-us" className="py-2 px-2 rounded hover:bg-white/10" onClick={() => setOpen(false)} style={{ color: '#E3DFD3' }}>
             Contact Us
